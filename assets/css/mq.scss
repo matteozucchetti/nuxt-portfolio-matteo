@@ -1,0 +1,18 @@
+$breakpoints-config: (
+  xxxs: 1px,
+  xxs: 320px,
+  xs: 420px,
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1920px,
+);
+$show-breakpoints-config: (xxxs, xxs, xs, sm, md, lg, xl, xxl, xxxl);
+$media-type-config: "screen";
+
+@forward "sass-mq/mq" with (
+  $breakpoints: $breakpoints-config,
+  $media-type: $media-type-config
+);
