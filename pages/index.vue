@@ -1,6 +1,9 @@
 <template>
   <div class="pf-grid">
-    <div class="pf-background" ref="background"></div>
+    <div class="pf-background">
+      <p ref="backgroundParagraph">&nbsp;</p>
+      <span>Made with Nuxt<br />Deployed and hosted with AWS Amplify</span>
+    </div>
 
     <NuxtLink
       to="/about-me"
@@ -51,24 +54,27 @@ definePageMeta({
   },
 });
 
-const background = ref<HTMLElement | null>(null);
+const backgroundParagraph = ref<HTMLParagraphElement | null>(null);
 
 const onMouseOver = (e: MouseEvent, text: string) => {
   const targetElement = e.target as Element;
   const title = text ? text : targetElement.querySelector("h2")?.textContent;
 
-  gsap.to(background.value, {
+  if (!backgroundParagraph.value) return;
+
+  gsap.to(backgroundParagraph.value, {
     autoAlpha: 0,
     duration: 0.15,
+
     onComplete: () => {
-      if (background.value) {
-        background.value.textContent = title || "";
-      }
-      gsap.to(background.value, {
+      backgroundParagraph.value!.textContent = title || "";
+      gsap.to(backgroundParagraph.value, {
         autoAlpha: 1,
         duration: 0.15,
       });
-      const split = new SplitText(background.value);
+
+      const split = new SplitText(backgroundParagraph.value);
+
       gsap.from(split.chars, {
         duration: 0.3,
         y: 15,
@@ -104,7 +110,19 @@ const onMouseOver = (e: MouseEvent, text: string) => {
   pointer-events: none;
   z-index: -1;
   text-transform: uppercase;
-  filter: blur(3px);
+
+  span {
+    font-size: 14px;
+    text-transform: none;
+    text-align: right;
+    font-weight: 500;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  p {
+    filter: blur(3px);
+  }
 }
 .pf-grid {
   display: grid;
