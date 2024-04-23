@@ -7,8 +7,7 @@
           <img class="pf-portrait" src="/img/matte.png" alt="" />
 
           <p class="pf-facts">
-            <span>Lorem ipsum dolor sit amet.</span>
-            <span>Lorem ipsum dolor sit amet.</span>
+            <span>Feel free<br />to get in touch.</span>
           </p>
         </div>
         <div class="pf-columns">
@@ -17,8 +16,8 @@
         </div>
         <div class="pf-columns">
           <p class="pf-social">
-            <a href="https://www.instagram.com/fior_diligi/" target="_blank">
-              Instagram
+            <a href="https://www.github.com/matteozucchetti/" target="_blank">
+              GitHub
             </a>
             <br />
             <a
@@ -38,7 +37,7 @@
                 dev@matteozucchetti.it
               </a>
             </p>
-            <p class="pf-phone">+39 340 100 2881</p>
+            <p class="pf-phone">+39 366 728 1808</p>
           </div>
         </div>
       </div>

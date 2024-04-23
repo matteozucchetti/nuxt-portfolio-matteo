@@ -7,11 +7,11 @@
           <img class="pf-portrait" src="/img/matte.png" alt="" />
 
           <p class="pf-facts">
-            <span>Digital Design</span>
-            <span>Brand Design</span>
-            <span>Motion</span>
-            <span>Type Design</span>
-            <span>Public Speaking</span>
+            <span>HTML/SCSS/JS</span>
+            <span>GSAP</span>
+            <span>Typescript</span>
+            <span>Vue.js/Nuxt</span>
+            <span>AWS 🤍</span>
           </p>
         </div>
         <div class="pf-columns">
@@ -20,22 +20,18 @@
         </div>
         <div class="pf-columns">
           <p class="pf-body">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing.
+            I'm Matteo, Frontend Developer - Technical Advisor currently at
+            PLAYGROUND | digital agency (Cernusco sul Naviglio - remote).<br /><br />What
+            I've been doing for the last 10+ years:<br /><br />Front-end
+            websites and landing pages, marketing pages, DEM, newsletters and
+            PWA/SPA creative development. Team Technical Advisor.<br /><br />Side
+            projects: Vue.js, Nuxt, headless Wordpress, AWS and more.
           </p>
           <p class="pf-body">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing.
+            Passionate about mountain (hiking, trail running), swimming and
+            beers.<br /><br />Had a (short) career as a musician playing piano,
+            guitar and bass in a 60/70 hard rock cover band.<br /><br />
+            In love with personal growth and finance books.
           </p>
         </div>
       </div>
@@ -121,7 +117,7 @@ definePageMeta({
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-    text-align: justify;
+    text-wrap: pretty;
 
     @include mq($until: lg) {
       font-size: 22px;
