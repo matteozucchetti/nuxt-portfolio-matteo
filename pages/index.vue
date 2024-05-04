@@ -2,7 +2,10 @@
   <div class="pf-grid">
     <div class="pf-background">
       <p ref="backgroundParagraph">&nbsp;</p>
-      <span>Made with Nuxt<br />Deployed and hosted with AWS Amplify</span>
+      <span
+        >Made with Nuxt<br />Deployed and hosted with AWS Amplify<br />Work in
+        progress</span
+      >
     </div>
 
     <NuxtLink
